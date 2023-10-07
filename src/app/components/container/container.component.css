@@ -1,0 +1,79 @@
+/* nav principal */
+.contenedor {
+  height: 100%;
+  background-color: #0d0d0d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  position: relative;
+  height: 95%;
+  width: 95%;
+  border: solid 1px;
+  display: flex;
+  flex-direction: row;
+  border-color: white;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+
+.hidden {
+  opacity: 0;
+  display: none;
+}
+.presentation {
+  color: white;
+}
+.text-animated {
+  overflow: hidden;
+}
+
+.text-animated span {
+  display: inline-block;
+  animation: appear 5s linear normal;
+  -webkit-animation: appear 5s linear normal;
+  white-space: nowrap;
+  opacity: 0;
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateX(
+      -100%
+    ); /* Inicia fuera de la pantalla a la izquierda */
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(0); /* Aparece en su posición final */
+  }
+  30% {
+    opacity: 0.8;
+    transform: translateX(0); /* Se mantiene visible */
+  }
+  60% {
+    opacity: 0.5;
+    transform: translateX(0); /* Se mantiene visible */
+  }
+  70% {
+    opacity: 0.3;
+    transform: translateX(0); /* Se mantiene visible */
+  }
+  90% {
+    opacity: 0.2;
+    transform: translateX(0); /* Se mantiene visible */
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(
+      100%
+    ); /* Desaparece fuera de la pantalla a la derecha */
+  }
+}
+.text-animated span{
+  font-size: 20px;
+}

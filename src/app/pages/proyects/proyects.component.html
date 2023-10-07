@@ -1,0 +1,28 @@
+<app-container>
+  <section class="info aparecer-x">
+    <div class="info_principal">
+      <p class="info_principal-titulo">Aroni Ordoñes</p>
+      <p class="info_principal-carrera">Software Engineer</p>
+    </div>
+    <div class="info_links">
+      <a [routerLink]="['/']">Home</a>
+      <a [routerLink]="['/proyects']">Proyects</a>
+      <a href="">Contact</a>
+    </div>
+  </section>
+  <section class="proyects aparecer-y">
+    <div class="proyects-info">
+      <p class="proyectst-title">Proyects: Web Desing & Presentations</p>
+    </div>
+    <div class="proyects-cards">
+      <a class="proyects-card"  *ngFor="let proyect of proyects" title="click to see more" (click)="activatePopup() ; asignProyect(proyect)">
+        <p class="proyects-card_title">{{proyect.name}}</p>
+        <p class="proyects-card_semana">Semana-{{proyect.semana}}</p>
+        <p> / 2023</p>
+      </a>
+    </div>
+  </section>
+  <div *ngIf="activar" class="proyects-popup">
+    <app-popup (closePopUP)="closePopUp($event)"></app-popup>
+  </div>
+</app-container>

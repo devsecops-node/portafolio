@@ -1,0 +1,105 @@
+p,
+h1,
+h1,
+a {
+  color: white;
+  letter-spacing: -0.05em;
+  margin: 0;
+  padding: 0;
+}
+.info {
+  padding: 40px;
+  width: 30%;
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+}
+
+/* Info */
+.info_principal-titulo {
+  font-size: 45px;
+  font-weight: 200;
+}
+.info_principal-carrera {
+  font-size: 15px;
+  font-weight: 400;
+}
+@media (max-width: 720px) {
+  .info_principal-titulo {
+    font-size: 25px;
+  }
+}
+
+/* info links */
+a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.info_links {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.proyects {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 100px;
+  padding: 30px;
+}
+.proyects-cards {
+  margin-top: 40px;
+}
+
+.proyects-card {
+  padding: 20px;
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.proyects-card_title {
+  font-size: 40px;
+  font-weight: 200;
+
+  white-space: nowrap
+}
+
+.proyects-card_semana{
+  white-space: nowrap
+}
+@media(max-width:1200px){
+  .proyects-card_title {
+    font-size: 20px;
+    font-weight: 200;
+
+    white-space: nowrap
+  }
+}
+a{
+  opacity: 1;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+a:hover{
+  opacity: 0.2;
+}
+
+
+/* popuo */
+.proyects-popup{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+}

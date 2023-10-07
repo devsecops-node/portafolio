@@ -1,0 +1,85 @@
+p {
+  color: white;
+}
+.popup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.8) /* Green background with 30% opacity */;
+  align-items: center;
+  animation: aparecer 1.5s ease-in-out;
+  -webkit-animation: aparecer 1.5s ease-in-out;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; /* Inicia con opacidad 0 */
+    transform: translateX(-100%);
+    filter: blur(5px);
+  }
+  50% {
+    opacity: 0.5;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+  }
+  60%,
+  70%,
+  80%,
+  90% {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+    -webkit-filter: blur(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+}
+}
+.popup-title {
+  font-size: 30px;
+  text-decoration: underline;
+  font-size: 30px;
+  font-weight: 200;
+}
+.popup-semana {
+}
+.popup-resumen {
+  color: white;
+  font-weight: 400;
+  width: 500px;
+  letter-spacing: -0.05em;
+  line-height: 25px;
+}
+button{
+  background-color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+button:hover{
+  background-color: #444444;
+  color: white;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}

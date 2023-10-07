@@ -1,0 +1,31 @@
+<app-container>
+  <section class="info aparecer-x">
+    <div class="info_principal">
+      <p class="info_principal-titulo">Aroni Ordoñes</p>
+      <p class="info_principal-carrera">Software Engineer</p>
+    </div>
+    <div class="info_links">
+      <a
+        #home
+        this.linkClicked="!this.linkClicked"
+        [routerLink]="['/']"
+        >Home</a
+      >
+      <a #proyects [routerLink]="['/proyects']">Proyects</a>
+      <a #contact [routerLink]="['/contact']">Contact</a>
+    </div>
+  </section>
+  <section class="details">
+    <div class="details_texto aparecer-y">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+        laboriosam at voluptates ullam facilis adipisci architecto tenetur
+        voluptatum vero ex recusandae consequuntur nulla in placeat eaque, nam
+        sint illum expedita! Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Officiis accusamus veritatis maiores fugit voluptates debitis,
+        quis cum facilis et aut possimus provident omnis illum. Asperiores
+        veniam eaque veritatis repudiandae. Expedita.
+      </p>
+    </div>
+  </section>
+</app-container>

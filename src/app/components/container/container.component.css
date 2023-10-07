@@ -8,11 +8,13 @@
 }
 
 .main {
+  position: relative;
   height: 95%;
   width: 95%;
   border: solid 1px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   border-color: white;
   border-radius: 0px;
   -webkit-border-radius: 0px;
@@ -21,7 +23,7 @@
   -o-border-radius: 0px;
 }
 
-@media(max-width:400px){
+@media(max-width:600px){
   .main{
     flex-direction: column;
   }

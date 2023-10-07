@@ -15,10 +15,17 @@
       <p class="proyectst-title">Proyects: Web Desing & Presentations</p>
     </div>
     <div class="proyects-cards">
-      <a class="proyects-card"  *ngFor="let proyect of proyects" title="click to see more" (click)="activatePopup() ; asignProyect(proyect)">
-        <p class="proyects-card_title">{{proyect.name}}</p>
-        <p class="proyects-card_semana">Semana-{{proyect.semana}}</p>
-        <p> / 2023</p>
+      <a
+        class="proyects-card"
+        *ngFor="let proyect of proyects"
+        title="click to see more"
+        (click)="activatePopup(); asignProyect(proyect)"
+      >
+        <p class="proyects-card_title">{{ proyect.name }}</p>
+        <div class="proyects-card_info">
+          <p class="proyects-card_semana">Semana-{{ proyect.semana }}</p>
+          <p>/ 2023</p>
+        </div>
       </a>
     </div>
   </section>

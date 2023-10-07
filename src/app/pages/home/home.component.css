@@ -11,7 +11,7 @@ a {
   flex: 1;
   padding: 40px;
 }
-@media(max-width:400px){
+@media(max-width:600px){
   .info{
     display: flex;
     align-items: center;

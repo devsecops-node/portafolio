@@ -9,12 +9,19 @@ a {
 }
 .info {
   padding: 40px;
-  width: 30%;
-  position: relative;
-  top: auto;
-  left: auto;
-  right: auto;
-  bottom: auto;
+  max-width: 30%;
+}
+
+@media(max-width:600px){
+  .info{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .info_principal{
+    text-align: center;
+  }
 }
 
 /* Info */
@@ -46,29 +53,49 @@ a {
   gap: 10px;
 }
 .proyects {
-  flex: 1;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin-top: 100px;
   padding: 30px;
+  flex-grow: 1;
+  position: relative;
+  overflow-y: scroll;
 }
+
+.proyects::-webkit-scrollbar{
+  display: none;
+}
+
 .proyects-cards {
   margin-top: 40px;
+}
+.proyects-card_info{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
 }
 
 .proyects-card {
   padding: 20px;
   direction: rtl;
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 5px;
 }
+
+@media(max-width:1500px){
+  .proyects-card{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
 .proyects-card_title {
   font-size: 40px;
   font-weight: 200;
-
-  white-space: nowrap
 }
 
 .proyects-card_semana{
@@ -76,14 +103,11 @@ a {
 }
 @media(max-width:1200px){
   .proyects-card_title {
-    font-size: 20px;
-    font-weight: 200;
-
-    white-space: nowrap
   }
 }
 a{
   opacity: 1;
+  display: inline-block;
   transition: all 1s;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;

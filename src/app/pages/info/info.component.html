@@ -1,0 +1,21 @@
+<app-container>
+  <section class="info aparecer-x indexando">
+    <div class="info_principal">
+      <p class="info_principal-titulo">Aroni Ordoñes</p>
+      <p class="info_principal-carrera">Software Engineer</p>
+    </div>
+    <div class="info_links">
+      <a
+        #home
+        this.linkClicked="!this.linkClicked"
+        [routerLink]="['/']"
+        >Home</a
+      >
+      <a #proyects [routerLink]="['/proyects']">Proyects</a>
+      <a #contact [routerLink]="['/info']">Info</a>
+    </div>
+  </section>
+  <section class="details">
+
+  </section>
+</app-container>

@@ -1,3 +1,3 @@
 ### Portfolio
-[ ] Info view
-[ ] Upload Github
+- [ ] Info view
+- [ ] Upload Github

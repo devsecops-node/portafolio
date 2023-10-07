@@ -1,5 +1,5 @@
 <app-container>
-  <section class="info aparecer-x">
+  <section class="info aparecer-x"  [ngClass]="{ 'indexando': !activar }">
     <div class="info_principal">
       <p class="info_principal-titulo">Aroni Ordoñes</p>
       <p class="info_principal-carrera">Software Engineer</p>
@@ -10,7 +10,7 @@
       <a href="">Contact</a>
     </div>
   </section>
-  <section class="proyects aparecer-y">
+  <section class="proyects aparecer-y" [ngClass]="{ 'indexando': !activar }">
     <div class="proyects-info">
       <p class="proyectst-title">Proyects: Web Desing & Presentations</p>
     </div>

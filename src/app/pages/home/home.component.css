@@ -76,3 +76,21 @@ a {
 
 /* animations */
 
+.indexando{
+  z-index: 1;
+  position: absolute;
+}
+
+a{
+  opacity: 1;
+  display: inline-block;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+a:hover{
+  opacity: 0.2;
+}

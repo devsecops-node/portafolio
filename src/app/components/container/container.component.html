@@ -1,6 +1,21 @@
 <div class="contenedor">
   <main class="main" [ngClass]="{'hidden': encender}">
     <ng-content></ng-content>
+    <div class="animatedBackground">
+      <ul class="squares">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
   </main>
   <section [ngClass]="{'hidden':!encender}" class="presentation text-animated">
     <span>Aroni Ordoñes Porfolio</span>

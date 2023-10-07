@@ -11,7 +11,13 @@ a {
   flex: 1;
   padding: 40px;
 }
-
+@media(max-width:400px){
+  .info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .details {
   padding: 40px;
   flex: 1;

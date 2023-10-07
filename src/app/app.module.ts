@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { ContainerComponent } from './components/container/container.component';
 import { HomeComponent } from './pages/home/home.component';
 import { PopupComponent } from './components/popup/popup.component';
+import { InfoComponent } from './pages/info/info.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PopupComponent } from './components/popup/popup.component';
     ProyectsComponent,
     ContainerComponent,
     HomeComponent,
-    PopupComponent
+    PopupComponent,
+    InfoComponent
   ],
   imports: [
     RouterModule,

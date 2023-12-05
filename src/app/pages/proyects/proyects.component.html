@@ -1,13 +1,14 @@
 <app-container>
   <section class="info aparecer-x"  [ngClass]="{ 'indexando': !activar }">
     <div class="info_principal">
-      <p class="info_principal-titulo">Aroni Ordoñes</p>
+      <p class="info_principal-titulo">Aroni Ordoñez</p>
       <p class="info_principal-carrera">Software Engineer</p>
     </div>
     <div class="info_links">
-      <a [routerLink]="['/']">Home</a>
-      <a [routerLink]="['/proyects']">Proyects</a>
-      <a [routerLink]="['info']">Info</a>
+      <a [routerLink]="['/']">Inicio</a>
+      <a [routerLink]="['/proyects']" *ngIf="!activate">Proyectos</a>
+      <a [routerLink]="['/proyects']" *ngIf="activate">.</a>
+      <a [routerLink]="['/info']">Informacion</a>
     </div>
   </section>
   <section class="proyects aparecer-y" [ngClass]="{ 'indexando': !activar }">

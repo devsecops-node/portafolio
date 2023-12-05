@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ProvideProyectsService, ProyectsUI } from 'src/app/services/provide-proyects.service';
-
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-proyects',
   templateUrl: './proyects.component.html',
@@ -9,8 +9,20 @@ import { ProvideProyectsService, ProyectsUI } from 'src/app/services/provide-pro
 export class ProyectsComponent {
   proyects: Array<ProyectsUI> = []
   activar = false
+  activate: boolean = false
+  ngOnInit(): void {
+    const route = this.route.snapshot.url.join('/')
+    // console.log(route, this.activate)
+    if (route === "proyects") {
+      this.activate = true
+    } else {
+      this.activate = false
+    }
 
-  constructor(private provideProyects: ProvideProyectsService) {
+    console.log(route, this.activate)
+  }
+
+  constructor(private provideProyects: ProvideProyectsService, private route: ActivatedRoute) {
     this.proyects = this.provideProyects.getAllProyects()
   }
 

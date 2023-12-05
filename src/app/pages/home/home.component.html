@@ -1,30 +1,23 @@
 <app-container>
   <section class="info aparecer-x indexando">
     <div class="info_principal">
-      <p class="info_principal-titulo">Aroni Ordoñes</p>
+      <p class="info_principal-titulo">Aroni Ordoñez</p>
       <p class="info_principal-carrera">Software Engineer</p>
     </div>
     <div class="info_links">
-      <a
-        #home
-        this.linkClicked="!this.linkClicked"
-        [routerLink]="['/']"
-        >Home</a
-      >
-      <a #proyects [routerLink]="['/proyects']">Proyects</a>
-      <a #contact [routerLink]="['/info']">Info</a>
+      <a #home this.linkClicked="!this.linkClicked" [routerLink]="['/']" *ngIf="!activate">Inicio</a>
+      <a #home this.linkClicked="!this.linkClicked" [routerLink]="['/']" *ngIf="activate">.</a>
+      <a #proyects [routerLink]="['/proyects']">Proyectos</a>
+      <a #contact [routerLink]="['/info']">Infornacion</a>
     </div>
   </section>
   <section class="details">
-    <div class="details_texto aparecer-y">
+    <div class="details_texto aparecer-y flexear">
+      <h1>Acerca de mi</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-        laboriosam at voluptates ullam facilis adipisci architecto tenetur
-        voluptatum vero ex recusandae consequuntur nulla in placeat eaque, nam
-        sint illum expedita! Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Officiis accusamus veritatis maiores fugit voluptates debitis,
-        quis cum facilis et aut possimus provident omnis illum. Asperiores
-        veniam eaque veritatis repudiandae. Expedita.
+        Estudiante, actualmente cursando el noveno semestre de la carrera de Ingeniería de Sistemas en la Universidad
+        Nacional del Centro del Perú y ubicado en el Quinto Superior, exhibe habilidades destacadas en trabajo grupal,
+        comunicación efectiva, destreza en relaciones interpersonales y una sólida pasión por la tecnología.
       </p>
     </div>
   </section>

@@ -27,7 +27,7 @@ a {
 }
 
 .details_texto {
-  width: 150px;
+  width: 200px;
   padding: 0;
 }
 
@@ -93,4 +93,12 @@ a{
 
 a:hover{
   opacity: 0.2;
+}
+
+
+/* Flexear texto de acerca de mi */
+.flexear{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
